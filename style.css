@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background: #00aa0b;
+    position: relative;
+    width: 100vw;
+    min-height: 100vh;
+}
+.modal{
+    background-color: #fff;
+    width: 400px;
+    height: 200px;
+    position: absolute;
+    top: -30%;
+    left: 50%;
+    z-index: 10;
+    transform: translateX(-50%);
+    padding: 1rem;
+    border-radius: 10px;
+    text-align: center;
+    transition: all .8s ease-out;
+}
+.modal-header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.title-modal{
+    font-size: 22px;
+}
+.modal-close{
+    font-size: 40px;
+    color: red;
+    cursor: pointer;
+}
+#inp{
+    width: 90%;
+    padding: .6rem;
+    outline: none;
+    margin: 1rem 0;
+}
+.modal button{
+    width: 150px;
+    height: 40px;
+    border: none;
+    background-color: #00aa0b;
+    font-size: 20px;
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.overlay{
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.list{
+    position: relative;
+    top: 100px;
+    width: 80%;
+    min-height: 500px;
+    margin: 0 auto;
+    /* background-color: red; */
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+.col{
+    background-color: #e8e8e8;
+    flex-basis: 20%;
+    text-align: center;
+    padding: 15px 10px;
+}
+#btn{
+    width: 150px;
+    height: 40px;
+    margin-top: 15px;
+    font-size: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.col:nth-child(even){
+    background-color: #ffffff;
+}
+.col-title{
+    border-bottom: 2px solid #000;
+    padding: 10px;
+}
+.item{
+    width: 100%;
+    height: 40px;
+    margin-top: 15px;
+    background-color: #fff;
+    border-radius: 5px;
+    font-size: 22px;
+    cursor: pointer;
+    text-align: center;
+    line-height: 40px;
+}
+.close{
+    display: inline-block;
+    cursor: pointer;
+}
+.close:hover{
+    color: red;
+}

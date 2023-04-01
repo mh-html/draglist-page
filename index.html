@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./app.js" defer></script>
+    <title>Drop and Drag</title>
+</head>
+<body>
+    <div class="modal">
+        <div class="modal-header">
+            <p class="title-modal">Please Enter your Todo:</p>
+            <span class="modal-close">×</span>
+        </div>
+        <input type="text" id="inp" placeholder="Enter Todo...">
+        <button type="button" id="add-modal">Add</button>
+    </div>
+    <div class="overlay"></div>
+    <div class="list">
+        <div class="newItem col">
+            <h1 class="col-title">New Item</h1>
+            <button type="button" id="btn">+ Add Todo</button>
+            <!-- <p class="item">Go park <span class="close">×</span></p> -->
+        </div>
+        <div class="col colTow"><h1 class="col-title">Started</h1></div>
+        <div class="col colTow"><h1 class="col-title">Programming</h1></div>
+        <div class="col colTow"><h1 class="col-title">Finish</h1></div>
+    </div>
+</body>
+</html>
